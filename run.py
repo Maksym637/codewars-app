@@ -1,5 +1,6 @@
-from implementation.six_kata import SixKata
+from menus.delegator_menu import MenuDelegator
 
 
 if __name__ == '__main__':
-    pass
+    menu = MenuDelegator()
+    menu.run_program()
