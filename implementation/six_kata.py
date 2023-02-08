@@ -40,7 +40,7 @@ class SixKata(SixKataInterface):
     def stock_list(self, list_of_art: list, list_of_cat: list) -> str:
         result, output = {}, []
 
-        if(len(list_of_art) == 0 or len(list_of_cat) == 0):
+        if (len(list_of_art) == 0 or len(list_of_cat) == 0):
             return ""
 
         for letter in list_of_cat:

@@ -1,16 +1,24 @@
 from .eight_menu import MenuEight
 from .seven_menu import MenuSeven
 from .six_menu import MenuSix
+from termcolor import colored
 
 
 class MenuDelegator:
 
     description = """
-        some text
+          ALL KATAS
+
+        1.) KATA - 8
+        2.) KATA - 7
+        3.) KATA - 6
+
+        Enter 0 to exit.
     """
 
     def run_program(self):
-        while(True):
+        print(colored("\n\tWelcome to menu !", "yellow"))
+        while (True):
             print(self.description)
             choice = input("Enter your choice : ")
             if (choice == "1"):
@@ -22,4 +30,4 @@ class MenuDelegator:
             elif (choice == "0"):
                 exit(0)
             else:
-                print("Kata not found !")
+                print(colored("\nKata not found !", "red"))

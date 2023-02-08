@@ -15,7 +15,7 @@ class MenuSix:
     def view_task_2(self):
         pass
 
-    def switch_task(self, choice):
+    def get_task_kata_six(self, choice):
         pass
 
     def run_menu(self):
