@@ -20,3 +20,9 @@ def exception_handler(function):
                     error_description
                 } ]""", "red"))
     return wrapper
+
+
+def read_file(path):
+    with open(path) as file:
+        data = file.read()
+    return data
