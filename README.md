@@ -10,5 +10,5 @@ Run all tests : `pytest tests`
 
 See coverage :
 1. `coverage run -m pytest`
-2. `coverage run -m pytest`
+2. `coverage report -m`
 - - -
